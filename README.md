@@ -41,7 +41,17 @@ python3 -m http.server 8000
 
 Then open the address it prints (usually `http://localhost:8000`).
 
-Or publish it straight to GitHub Pages — no configuration needed, and no server to run.
+### Hosting it on GitHub Pages
+
+Easiest option — no server to run, and it works on phones. In the repo: **Settings → Pages**, set
+*Source* to **Deploy from a branch**, pick the branch holding this code and the `/ (root)` folder,
+then Save. After a minute it's live at `https://<user>.github.io/learn-rust/`.
+
+Note that browsing `index.html` in GitHub's normal file view shows you the *source*, not the running
+app — GitHub serves repository files as text. Pages is what actually serves it as a website.
+
+The empty `.nojekyll` file tells Pages to publish the files exactly as they are instead of running
+them through Jekyll.
 
 ## Controls
 
