@@ -43,9 +43,14 @@ Then open the address it prints (usually `http://localhost:8000`).
 
 ### Hosting it on GitHub Pages
 
-Easiest option — no server to run, and it works on phones. In the repo: **Settings → Pages**, set
-*Source* to **Deploy from a branch**, pick the branch holding this code and the `/ (root)` folder,
-then Save. After a minute it's live at `https://<user>.github.io/learn-rust/`.
+Easiest option — no server to run, and it works on phones.
+
+1. **Settings → Pages**
+2. *Source* → **Deploy from a branch**
+3. Branch → the one holding this code, folder → **`/ (root)`** → **Save**
+
+After a minute it's live at `https://<user>.github.io/learn-rust/`. Nothing else is needed: the site
+is already static, so there is no build step for Pages to run.
 
 Note that browsing `index.html` in GitHub's normal file view shows you the *source*, not the running
 app — GitHub serves repository files as text. Pages is what actually serves it as a website.
