@@ -22,14 +22,26 @@ already understand.
 
 ## Running it
 
-It's a static site with **no build step and no dependencies**. Any web server will do:
+It's a static site with **no build step and no dependencies** — plain HTML, CSS and JavaScript.
+
+You do need to serve it over HTTP rather than opening `index.html` directly: the app loads its
+lessons as ES modules, and browsers block `import` over `file://`. Any static server works, so use
+whichever of these you already have:
 
 ```bash
+# Rust — fitting for this repo
+cargo install miniserve && miniserve . --index index.html
+
+# Node
+npx serve
+
+# Python — preinstalled on macOS and most Linux systems
 python3 -m http.server 8000
-# then open http://localhost:8000
 ```
 
-Or publish it straight to GitHub Pages — no configuration needed.
+Then open the address it prints (usually `http://localhost:8000`).
+
+Or publish it straight to GitHub Pages — no configuration needed, and no server to run.
 
 ## Controls
 
