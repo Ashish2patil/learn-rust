@@ -32,7 +32,7 @@ export const PARTS = [
   { label: "Thinking in Rust",            chapters: [13,14,15] },
   { label: "Concurrency & abstraction",   chapters: [16,17,18] },
   { label: "Advanced Rust",               chapters: [19,20] },
-  { label: "Reference",                   chapters: [21] }
+  { label: "Final project",               chapters: [21] }
 ];
 
 export function allLessons(){
